@@ -1,0 +1,467 @@
+
+
+
+
+
+
+body {
+    font-size: 9pt;
+    cursor: url('img/orange_cursor.png'), auto;
+}
+
+
+
+@media (max-width: 720px) {
+    body {
+      background-color: lightblue;
+    }
+}
+
+
+.debug-size {
+    width: auto;
+    height: auto;
+    font-size: 10pt;
+    background-color: rgba(87, 87, 87, 0.315);
+    z-index: 200;
+}
+
+
+
+
+.atvirukas {
+    max-width: 2560px;
+    max-height: 1440px;
+}
+
+
+#traukinys {
+    width: 3291px;
+    min-width: 3291px;
+    height: 132px;
+    background-image: url('img/traukinys.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    margin-top: 496px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    left: 2000px;
+}
+
+
+.bg-dangus {
+    width: 100%;
+    background-image: url('img/dangus-v2.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -170px;
+    z-index: 10;
+
+}
+
+.bg-miskas {
+    width: 100%;
+    background-image: url('img/miskas.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -134px;
+    z-index: 20;
+}
+
+.bg-sniegas {
+    width: 100%;
+    background-image: url('img/sniegas-v2.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -166px;
+    z-index: 30;
+    pointer-events: none;
+}
+
+
+
+.bg-egles-kaireje {
+    width: 100%;
+    background-image: url('img/egles-kaireje.png');
+    background-repeat: no-repeat;
+    background-position: left -110px bottom 0px;
+    background-size: contain;
+    z-index: 40;
+    pointer-events: none;
+}
+
+.bg-egles-desineje {
+    width: 100%;
+    background-image: url('img/egles-desineje.png');
+    background-repeat: no-repeat;
+    background-position: right -120px bottom 0px;
+    background-size: contain;
+    z-index: 50;
+    pointer-events: none;
+}
+
+.bg-medis {
+    width: 100%;
+    background-image: url('img/medis.png');
+    background-repeat: no-repeat;
+    background-position: left -50px bottom 0px;
+    background-size: auto 100%;
+    z-index: 60;
+    pointer-events: none;
+}
+
+.bg-krumas {
+    width: 100%;
+    background-image: url('img/krumas.png');
+    background-repeat: no-repeat;
+    background-position: left 0px bottom 0px;
+    background-size: contain;
+    z-index: 70;
+    pointer-events: none;
+}
+
+#letitsnow {
+    z-index: 80;
+    pointer-events: none;
+}
+
+
+@media (min-height: 1081px) {
+    .bg-sniegas {
+        background-position-y: 0px;
+    }
+    #traukinys {
+        margin-top: 662px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .bg-medis {
+        background-position-x: -150px;
+    }
+    .bg-krumas {
+        background-position-x: -75px;
+    }
+}
+
+@media (max-width: 650px) {
+    .bg-medis {
+        background-position-x: -250px;
+    }
+    .bg-krumas {
+        background-position-x: -125px;
+    }
+}
+
+
+@media (max-height: 800px){
+    #traukinys {
+        margin-top: 296px;
+    }
+    .bg-dangus {
+        background-position-y: -250px;
+    }
+    .bg-miskas {
+        background-position-y: -334px;
+    }
+    .bg-sniegas {
+        background-position-y: -366px;
+    }
+
+
+}
+
+@media (max-height: 550px) {
+    #traukinys {
+        margin-top: 226px;
+    }
+    .bg-dangus {
+        background-position-y: -320px;
+    }
+    .bg-miskas {
+        background-position-y: -404px;
+    }
+    .bg-sniegas {
+        background-position-y: -436px;
+    }
+
+
+}
+
+@media (max-height: 400px) {
+    #traukinys {
+        margin-top: 126px;
+    }
+    .bg-dangus {
+        background-position-y: -420px;
+    }
+    .bg-miskas {
+        background-position-y: -504px;
+    }
+    .bg-sniegas {
+        background-position-y: -536px;
+    }
+
+
+}
+
+@media (max-height: 280px) {
+    .bg-egles-desineje {
+        background-image: none;
+    }
+}
+
+
+.langas {
+    position: absolute;
+    top: 18px;
+    width: 64px;
+    height: 46px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16pt;
+    font-weight: 700;
+    color: white;
+
+    margin: 0;
+    padding: 0;
+    cursor: url('img/orange_pointer.png'), auto;
+    pointer-events: auto;
+}
+
+.langas:hover {
+    color: white;
+    background-color: none;
+    background-image: url('img/langas-hover.png');
+    text-decoration: none;
+}
+
+.langas.nelaikas {
+    color: #9c94b5;
+    cursor: url('img/orange_cursor.png'), auto;
+    background-color: none;
+}
+.langas.nelaikas:hover {
+    color: #9c94b5;
+    cursor: url('img/orange_cursor.png'), auto;
+    background-color: none;
+    background-image: none;
+}
+
+.diena-1 { left: 121px; }
+.diena-2 { left: 196px; }
+.diena-3 { left: 326px; }
+.diena-4 { left: 398px; }
+.diena-5 { left: 561px; }
+.diena-6 { left: 635px; }
+.diena-7 { left: 709px; }
+.diena-8 { left: 783px; }
+.diena-9 { left: 857px; }
+.diena-10 { left: 1018px; }
+.diena-11 { left: 1160px; }
+.diena-12 { left: 1231px; }
+.diena-13 { left: 1302px; }
+.diena-14 { left: 1465px; }
+.diena-15 { left: 1539px; }
+.diena-16 { left: 1613px; }
+.diena-17 { left: 1687px; }
+.diena-18 { left: 1761px; }
+.diena-19 { left: 1922px; }
+.diena-20 { left: 2064px; }
+.diena-21 { left: 2135px; }
+.diena-22 { left: 2206px; }
+.diena-23 { left: 2369px; }
+.diena-24 { left: 2443px; }
+.diena-25 { left: 2517px; }
+.diena-26 { left: 2591px; }
+.diena-27 { left: 2665px; }
+.diena-28 { left: 2829px; }
+.diena-29 { left: 2902px; }
+.diena-30 { left: 3032px; }
+.diena-31 { left: 3106px; }
+
+
+.ui-draggable-dragging {
+    cursor: url('img/orange_cursor.png'), auto !important;
+}
+#valdymas button, #valdymas button:hover, #valdymas a, #valdymas a:hover, #proweb-modal button, #proweb-modal button:hover {
+    cursor: url('img/orange_pointer.png'), auto !important;
+}
+
+
+
+
+#valdymas {
+    z-index: 120;
+    background-color: rgba(118, 118, 118, 0.151);
+    padding-top: 12px;
+    padding-right: 4px;
+    padding-bottom: 12px;
+    padding-left: 4px;
+    margin: 0 auto;
+}
+
+#valdymas .bi-circle-fill {
+    margin-right: 8px;
+}
+#valdymas .bi.bi-pirmyn-on {
+    display: none;
+    color: #18ee00;
+}
+#valdymas .bi.bi-pirmyn-off {
+    color: #dcfcd7;
+}
+#valdymas .bi.bi-stop-on {
+    display: none;
+    color: #f00000;
+}
+#valdymas .bi.bi-stop-off {
+    color: #fcd4d4;
+}
+.bi-volume-mute-fill {
+    color: #ffffff;
+    display: none;
+}
+.bi-volume-up-fill {
+    color: #ffffff;
+}
+.bi-globe {
+    margin-right: 8px;
+}
+
+#theStartPage {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 130;
+    align-items: center;
+    justify-content: center;
+}
+
+#proweb-modal .modal-xl {
+    max-width: 976px;
+    margin-top: 72px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+#proweb-modal .modal-content {
+    border: 5px solid #6db2ef;
+}
+
+#proweb-modal .modal-custom-snow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% + 30px);
+    height: 147px;
+    background-image: url('img/snow-modal.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -58px;
+    margin-left: -15px;
+    margin-right: -15px;
+    z-index: 1075;
+}
+
+
+
+@media (max-width: 850px) {
+    #proweb-modal .modal-custom-snow {
+        margin-top: -48px;
+    }
+}
+@media (max-width: 720px) {
+    #proweb-modal .modal-custom-snow {
+        margin-top: -38px;
+    }
+}
+@media (max-width: 580px) {
+
+    #proweb-modal .modal-custom-snow {
+        margin-top: -28px;
+    }
+}
+
+
+#proweb-modal button.btn-close {
+    z-index: 1080;
+}
+#proweb-modal .modal-header {
+    border-bottom: none;
+}
+
+
+
+
+
+#proweb-modal ul {
+    list-style: disc;
+    list-style-position: inside;
+    padding: 0;
+    margin: 0 0 24px 28px;
+}
+#proweb-modal ol {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0 0 24px 28px;
+}
+
+#proweb-modal a:not(.btn) {
+    color: #3f6ab1;
+    text-decoration: none;
+}
+#proweb-modal a:hover:not(.btn) {
+    color: #5e99ce;
+    text-decoration: none;
+    cursor: url('img/orange_pointer.png'), auto;
+}
+
+
+#proweb-modal .iliustracija-auto {
+    width: 35%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width: 580px) {
+
+    #proweb-modal .iliustracija-auto {
+        width: 100%;
+        margin-right: 0px;
+    }
+}
+
+.comment-text {
+    font-size: 16px;
+}
+
+.komentarai-avatar {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background: #6db2ef;
+    border-radius: 40px;
+}
+
+.listKomentaras small {
+    font-size: 12px;
+    color: rgb(133, 133, 133);
+}
+
+.koment-h-color {
+    color: #3f6ab1;
+}
+.koment-ico-color {
+    color: #6db2ef;
+}
