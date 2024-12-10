@@ -9,13 +9,6 @@ class Day extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name_lt', 'name_en', 'text_lt', 'text_en', 'show_from', 'image'];
+    protected $fillable = ['name_lt', 'text_lt'];
 
-
-
-
-    public function comments()
-    {
-        return $this->hasMany(Comment::class);
-    }
 }

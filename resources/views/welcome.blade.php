@@ -26,16 +26,10 @@
 
 
 @foreach ($days as $day)
-    @if ($day->show_from < now())
-        <a href="{{ url(app()->getLocale().'/'.$day->slug) }}" title="{{ app()->getLocale() === "en" ? $day->name_en : $day->name_lt }}" class="langas diena-{{ $day->id }}">{{ $day->id }}</a>
+    @if (!empty($day->name_lt) && !empty($day->text_lt))
+        <a href="{{ url(app()->getLocale().'/'.$day->slug) }}" title="Klausimas nr. {{ $day->id }}" class="langas diena-{{ $day->id }}">{{ $day->id }}</a>
     @else
-
-        @if (Auth::guest())
-            <span class="langas diena-{{ $day->id }} nelaikas">{{ $day->id }}</span>
-        @else
-            <a href="{{ url(app()->getLocale().'/'.$day->slug) }}" title="{{ app()->getLocale() === "en" ? $day->name_en : $day->name_lt }}" class="langas diena-{{ $day->id }}">{{ $day->id }}</a>
-        @endif 
-
+        <span class="langas diena-{{ $day->id }} nelaikas">{{ $day->id }}</span>
     @endif
 
 @endforeach
@@ -76,21 +70,6 @@
                     <i class="bi bi-volume-mute-fill"></i>
                     <i class="bi bi-volume-up-fill"></i>
                 </button>
-                <a href="
-                @if (app()->getLocale() == 'lt')
-                    {{ ('/en/') }}
-                @else
-                    {{ ('/') }}
-                @endif
-                " class="btn btn-secondary">
-                    <i class="bi bi-globe"></i>
-                @if (app()->getLocale() == 'lt')
-                    {{ ('EN') }}
-                @else
-                    {{ ('LT') }}
-                @endif
-                </a>
-
 
             </div>
 
@@ -100,7 +79,7 @@
 
         <div class="row flex-fill fill d-flex min-vh-100 position-absolute top-0 start-0 m-0 p-0" id="theStartPage">
             <div class="d-grid col-sm-8 col-md-3 mx-auto">
-                <button type="button" class="btn btn-success btn-lg" id="pradedamKelione">PIRMYN / GO</button>
+                <button type="button" class="btn btn-success btn-lg" id="pradedamKelione">PIRMYN</button>
             </div>
         </div>
 
@@ -113,11 +92,11 @@
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5 mt-2 ps-2 koment-h-color" id="proweb-modal-title"></h1>
+          <h1 class="modal-title fs-5 mt-2 ps-2 koment-h-color w-100 text-center pt-4" id="proweb-modal-title"></h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Uždaryti"></button>
         </div>
         <div class="modal-custom-snow"></div>
-        <div class="modal-body fs-6 px-4">...</div>
+        <div class="modal-body fs-5 px-4">...</div>
       </div>
     </div>
   </div>

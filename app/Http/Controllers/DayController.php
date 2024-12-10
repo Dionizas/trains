@@ -29,13 +29,7 @@ class DayController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
-            'name_lt' => 'required',
-            'name_en' => 'required',
-        ]);
-        
         Day::create($request->post());
-
         return redirect()->route('days.index')->with('success','Day has been created successfully.');
     }
 
@@ -48,24 +42,15 @@ class DayController extends Controller
 
     public function edit(Day $day)
     {
-        $files = File::allFiles(public_path('media\images'));
-        return view('days.edit', compact('day', 'files'));
+        return view('days.edit', compact('day'));
     }
 
 
     public function update(Request $request, Day $day)
     {
-        $request->validate([
-            'name_lt' => 'required',
-            'name_en' => 'required',
-        ]);
-
         $day->fill($request->post())->save();
-
-        return redirect()->route('days.index')->with('success','Diena sėkmingai atnaujinta.');
+        return redirect()->route('days.index')->with('success','Klausimas sėkmingai atnaujintas.');
     }
-
-
 
 
 }

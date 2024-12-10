@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
     {
         DB::table('users')->insert([
             'name' => 'Admin',
-            'email' => 'admin@ltgkalendorius.lt',
+            'email' => 'admin@proweb.lt',
             'email_verified_at' => now(),
             'password' => Hash::make('pavasaris'),
         ]);
@@ -25,10 +25,10 @@ class DatabaseSeeder extends Seeder
         for ($i = 1; $i <= 31; $i++) {
             DB::table('days')->insert([
                 'slug' => Str::random(32),
-                'name_lt' => 'Diena ' . $i,
-                'name_en' => 'Day ' . $i,
-                'text_lt' => 'Gruodžio ' . $i . ' diena. Tekstas.',
-                'text_en' => 'December ' . $i . ' day. Text.',
+                'name_lt' => '',
+                'name_en' => '',
+                'text_lt' => '',
+                'text_en' => '',
                 'show_from' => '2022-12-' . $i . ' 00:00:30',
             ]);
         }

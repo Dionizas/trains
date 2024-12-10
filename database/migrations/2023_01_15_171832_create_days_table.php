@@ -18,8 +18,8 @@ return new class extends Migration
             $table->id();
             $table->string('slug')->unique();
             $table->string('image')->nullable();
-            $table->string('name_lt');
-            $table->string('name_en');
+            $table->string('name_lt')->nullable();
+            $table->string('name_en')->nullable();
             $table->text('text_lt')->nullable();
             $table->text('text_en')->nullable();
             $table->timestamp('show_from')->nullable();

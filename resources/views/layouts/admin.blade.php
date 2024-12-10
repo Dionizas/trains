@@ -47,7 +47,7 @@
                 <form action="{{ route('logout') }}" method="POST">
                     @csrf
 
-                    <button class="btn btn-primary ms-md-2" role="button">Logout</button>
+                    <button class="btn btn-primary ms-md-2" role="button">Atsijungti</button>
                 </form>
 
 
