@@ -6,7 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>LTG Kalendorius</title>
 
-    <link href="{{ asset('assets/favicon.ico') }}" rel="icon" type="image/x-icon" />
+    <link href="{{ asset('assets/favicon.ico?v2') }}" rel="icon" type="image/x-icon" />
     <link href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/proweb/proweb.css?v=1.3.27') }}" rel="stylesheet">
