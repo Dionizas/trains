@@ -25,6 +25,14 @@ Route::get('/', function () {
     return view('welcome', compact('days'));
 });
 
+
+Route::get('/admin', function () {
+    return redirect('/dashboard');
+});
+Route::get('/edit', function () {
+    return redirect('/dashboard');
+});
+
 Route::get('/lt/{day:slug}', function (Day $day) {
     App::setLocale('lt');
     return view('day', compact('day'));
