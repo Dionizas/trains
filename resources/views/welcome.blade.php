@@ -9,7 +9,7 @@
     <link href="{{ asset('assets/favicon.ico?v2') }}" rel="icon" type="image/x-icon" />
     <link href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/proweb/proweb.css?v=1.3.27') }}" rel="stylesheet">
+    <link href="{{ asset('assets/proweb/proweb.css?v=1.3.28') }}" rel="stylesheet">
 </head>
 <body class="bg-secondary">
 
