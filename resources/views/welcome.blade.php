@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.65, maximum-scale=0.65, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>LTG Kalendorius</title>
+    <title>Studentams</title>
 
     <link href="{{ asset('assets/favicon.ico?v2') }}" rel="icon" type="image/x-icon" />
     <link href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
